@@ -12,6 +12,17 @@ body
     color: #0f2b7e;
 }
 
+.color-green{ 
+
+    color: #a7cf38;
+
+}
+
+.color-white{
+
+    color: #f0f1f2;
+}
+
 /** Icon Rotation **/
 
 #icon-270 /*? Arrow-icon */
@@ -25,6 +36,9 @@ body
     transform: rotate(45deg); /** Rotate icon to 45 deg */
     font-size: 40px;  
 }
+
+
+
 
 /** Aligh Center **/
 
@@ -125,9 +139,21 @@ body
     /** Button Position **/
     position: relative;
     left:150px;
-    
 
-    
+}
+
+
+.quick-protfolio-btn a {
+    /** Text **/
+    text-decoration: none;
+    color: white;
+}
+
+/*? Quick Protfolio Btn Hover */
+.quick-protfolio-btn:hover{
+
+    background-color: #c5ea60;
+    color: #172346;
 }
 
 /** Hero-image */
@@ -189,6 +215,15 @@ body
 
 }
 
+/*? About Us Image */
+
+#aboutus-image{
+
+    border-radius: 25px;
+    
+} 
+
+
 /*Todo : Our Solutions */
 
 /*? Our Solution Title */
@@ -197,6 +232,13 @@ body
     margin-bottom: 60px;
 }
 
+/*? image (Enginner) */
+
+#eng-img{
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    filter:contrast(84%)
+}
 
 .solution-box-icon /*? Icon with green section of solution box */
 {
@@ -232,4 +274,284 @@ body
 
     margin-bottom: 40px;
 
+    height: 258px;
+
+}
+
+.costbox
+{
+     padding: 32px;
+}
+
+.slider-wrapper
+{
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.slider
+{
+    display: flex;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 25px;
+}
+
+.slider img 
+{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav
+{
+    display: flex;
+    column-gap: 12px;
+    position: relative;
+    bottom: -10px;
+   
+}
+
+
+
+.slider-nav a:hover
+{
+    opacity: 50%;
+}
+
+.btn-gallery a /*? Portfolio Button */
+{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    color: #a7cf38
+}
+
+/*Todo - Quote */
+
+/*? Quote Icon */
+#quote-icon {
+    font-size: 60px;
+    color: #a7cf38;
+    padding: 40px;
+}
+
+/*? Clients name & Job Category (div)*/
+.name{
+    padding: 20px;
+}
+
+/*? Clinet name */
+.name h5{
+    color: #0f2b7e;
+}
+
+/*? Clinet job */
+.name p{
+    color: #989898;
+}
+
+.quotes {
+    margin-bottom:70px;
+}
+
+/*Todo - Team members */
+
+.team-member{   /*? team member (div) */
+    /** Bacckground **/
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    background-color: #172346;
+    /** inside space **/
+    padding: 30px;
+    color: white;
+}
+
+/*Todo - Contact Us */
+
+
+.Details{ 
+    padding: 32px;
+}
+
+#sub{
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    background-color:#172346;
+}
+
+footer
+{
+    background-color: #172346;
+    width: 100%;
+}
+
+/** Whatsup Button **/
+.WhatsApp{
+
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+    background-color: #a7cf38;
+}
+
+label{
+
+    color: #f0f1f2; 
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+#message-box{
+
+    height: 80px;
+}
+
+input{ /** form Input **/
+
+    border-radius: 45px;
+    border: none;
+
+    width: 450px;
+    height: 30px;
+  
+}
+
+.contact-forum{
+
+    padding-left: 0%;
+}
+
+.send-btn{
+
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+}
+
+.link-btn{
+
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+    
+        
+}
+
+
+/** Responsive - Media Quary - **/
+
+@media (max-width: 1399.98px) {
+    .white-part /*? Image with About us (div) - white */
+    {
+       
+            /** Background **/
+            background-color:white;
+            border-bottom-right-radius: 45px;
+    
+            padding: 60px 60px 60px 120px;
+    
+            position: relative;
+            right: 68px;
+    
+            /** Height of the box **/
+            height: 777px;
+    
+            z-index: -1;
+}
+}
+
+
+@media (max-width: 1199.98px){
+    .white-part /*? Image with About us (div) - white */
+    {
+       
+            /** Background **/
+            background-color:white;
+            border-bottom-right-radius: 45px;
+    
+            padding: 60px 60px 60px 120px;
+    
+            position: relative;
+            right: 68px;
+    
+            /** Height of the box **/
+            height: 895px;
+    
+            z-index: -1;
+}
+
+
+
+@media (max-width: 991.98px){
+    .white-part /*? Image with About us (div) - white */
+    {
+       
+            /** Background **/
+            background-color:white;
+            border-bottom-right-radius: 45px;
+    
+            padding: 60px 60px 60px 120px;
+    
+            position: relative;
+            right: 68px;
+    
+            /** Height of the box **/
+            height: 1385px;
+    
+            z-index: -1;
+            
+    
+    }
+}
+
+@media (max-width: 767.98px) { 
+
+    .white-part /*? Image with About us (div) - white */
+    {
+       
+            /** Background **/
+            background-color:white;
+            border-bottom-right-radius: 45px;
+    
+            padding: 60px 60px 60px 120px;
+    
+            position: relative;
+            right: 68px;
+    
+            /** Height of the box **/
+            height: 1000px;
+    
+            z-index: -1;
+            
+    
+    }
+}
+
+@media (max-width: 575.98px)  { 
+
+    .white-part /*? Image with About us (div) - white */
+    {
+       
+            /** Background **/
+            background-color:white;
+            border-bottom-right-radius: 45px;
+    
+            padding: 60px 60px 60px 120px;
+    
+            position: relative;
+            right: 68px;
+    
+            /** Height of the box **/
+            height: 777px;
+    
+            z-index: -1;
+            
+    
+    }
 }
