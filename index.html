@@ -12,12 +12,14 @@
         <link rel="stylesheet" href="style.css">
         <!--? Font Awesome Link -->
         <script src="https://kit.fontawesome.com/f7a9177d65.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
+
         <!--? Nav-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--* .navbar = Navigation Bar, .navbar-expand-lg = Responsive scale, .bg-body-tertiary = Navigation bar color* /There are many boostrap pre created CSS/   -->
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-body-tertiary"> <!--* .navbar = Navigation Bar, .navbar-expand-lg = Responsive scale, .bg-body-tertiary = Navigation bar color* /There are many boostrap pre created CSS/   -->
+            <div class="container">
                 <!--? CEC Logo-->
                 <a class="navbar-brand" href="#"> <!--* .navbar-brand = Logo -->
                     <img src="img/cec_logo.svg" alt="CEC Construction" width="100" height="30">
@@ -30,35 +32,37 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Testamonial</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Contact us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutus1">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service1">services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio1">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testamonia">Testamonial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team1">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact1">Contact us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+       
+
           <!--? Hero-->    
           <div class="container">
             <div class="row">
-                <div class="col-md-3 color-blue mt-auto mb-auto">
+                <div class="col-md-3 color-blue mt-auto mb-auto" data-aos="fade-left" data-aos-delay="460">
                     <!--? Header-->
                     <h1 id="hero-header" class="mb-2">Building<br>Dreams,<br>Crafting<br>Realities.</h1>
                     <!--? Arrow-icon -->
-                    <i class="fa-solid fa-circle-arrow-down mt-2" id="icon-270" ></i>
+                    <div data-aos="fade-left" data-aos-delay="480"><i class="fa-solid fa-circle-arrow-down mt-2" id="icon-270" ></i></div>
                     <!--? Protfolio Quick Button -->
-                    <div class="mt-5">
+                    <div class="mt-5" data-aos="zoom-in" data-aos-delay="500">
                         <ul class="list-inline mt-3 hero-title">
-                            <li class="list-inline-item"><span class="explore-showcase">Explore Showcase</span><button class="quick-protfolio-btn">Protfolio</button></li>  <!--? Explore Showcase -->    
+                            <li class="list-inline-item"><span class="explore-showcase">Explore Showcase</span><button class="quick-protfolio-btn"><a href="#portfolio1">Protfolio</a></button></li>  <!--? Explore Showcase -->    
                         </ul>
                     </div>
 
                 </div>
                 <!--? Hero-img-->
-                <div class="col-md-9">
+                <div class="col-md-9" data-aos="fade-left" data-aos-delay="480">
                     <!--? Hero-img-->
                     <img src="img/hero-img-all.png" class="img-fluid hero-img" " alt=""> <!--* img-fluid - That max-width = 100%, height= auto -->
                 </div>
@@ -69,7 +73,7 @@
         <!--? Scroll Down-->
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mt-4">
+                <div class="col-md-12 mt-4" >
                     <span class="scroll-down color-blue" style="font-size: 14px;">Scroll down <i class="fa-solid fa-angles-down" style="font-size: 14px;"></i> </span>
                 </div> 
             </div>
@@ -82,11 +86,11 @@
                 <div class="col-md-2"></div>
                 
                 <!--? Text lg (md-3)-->
-                <div class="col-md-3"><h4 class="color-blue">Building Excellence in Motion</h4></div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="650"><h4 class="color-blue">Building Excellence in Motion</h4></div>
                 <!--? Text sm (md-3)-->
-                <div class="col-md-3"><p>Dive into journey with Building Excellence in Motion</p></div>
+                <div class="col-md-3 " data-aos="fade-up" data-aos-delay="650"><p>Dive into journey with Building Excellence in Motion</p></div>
                 <!--? Text icon (md-2)-->
-                <div class="col-md-3 ms-auto"><i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180" ></i></div>
+                <div class="col-md-3 ms-auto" data-aos="fade-up" data-aos-delay="750"><i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180" ></i></div>
 
                 <!--? Space (md-2)-->
                 <div class="col-md-2"></div>
@@ -99,33 +103,37 @@
                  <!--? Space (md-2)-->
                 <div class="col-md-2"></div>
 
-                <div class="col-md-6 mt-4">
-                    <video src="img/cec-video.mp4" poster="img/hero-img-all.png" controls width="640" height="360"></video>
+                <div class="col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="750">
+                    <video src="img/cec-video.mp4" poster="img/video_cover.png" controls width="640" height="360" class="img-fluid hero-img"></video>
                 </div>
                 <!--? Jobs -->
                 <div class="col-md-2 mt-auto align-center">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-delay="750">
                         <h1 class="color-blue">500+</h1>
                         <h1 class="display-6 job-text";">Clients</h1>
                     </div>
-                    <div class="mt-5">
+                    <div class="mt-5" data-aos="zoom-in" data-aos-delay="750">
                         <h1 class="color-blue">800+</h1>
-                        <h1 class="display-6 job-text">Projects</h1>
+                        <h1 class="display-6 job-text" >Projects</h1>
                     </div>
                           
                 </div>
 
                 <!--? Space (md-2)-->
-                <div class="col-md-2"></div>
+                <div class="col-md-2" ></div>
             </div>
         </div>
 
+
+
+        
         <!--? About us -->
-        <div class="container mt-9">
+        <div class="mt-1" id="aboutus1"></div> <!--? tag -->
+        <div class="container mt-9" data-aos="zoom-in" data-aos-delay="500" > 
             <div class="row">
                 <!--? Vison & Mission -->
                 <div class="col-md-4">
-                    <div class="blue-part">
+                    <div class="blue-part" >
                         <!--? Heading-->
                         <h1>About us</h1>
                          <!--? Icon-->
@@ -133,7 +141,7 @@
                          <!--? Vision-->
                         <div>
                             <h1 class="display-6 mt-5">Vison</h1>
-                            <p>To be the ultimate construction service of the Island that enables 
+                            <p >To be the ultimate construction service of the Island that enables 
                                 communities to experience the excellence, satisfaction and the innovative spirit of the nature.
                             </p>
                         </div>
@@ -162,39 +170,43 @@
                             The past decade's lessons and successes will guide the future, building on a legacy of excellence
                             and enduring trust. Cheers to a decade of accomplishment, with anticipation for an even more remarkable future.
                         </p>
+                        <!--? about us image -->
+                        <img id="aboutus-image" src="img/about-us.png" alt="" class="img-fluid mt-4" width="100%">
                     </div>
                 </div>
             </div>
         </div>
 
+        
+
         <!--? Our Solutions-->
+        <div class="mt-1" id="service1"></div> <!--? tag -->
         <div class="container mt-9">
             <div class="row">
                 <div class="col-md-4"><!--Todo Col-4-->
-                    <div class="Title">
+                    <div class="Title" >
                     <!--? Heading -->
-                    <h1 id="">Our<br>Solutions</h1>
+                    <h1 id="" data-aos="fade-up" data-aos-delay="300">Our<br>Solutions</h1>
                     <!--? Icon -->
-                    <i class="fa-solid fa-circle-arrow-down color-blue our-solution-title" id="icon-180" ></i>     
+                    <i class="fa-solid fa-circle-arrow-down color-blue our-solution-title" id="icon-270" data-aos="fade-R=right" data-aos-delay="320"></i>     
                     </div>
 
                     <!--? img -->
-                    <img src="img/ai_eng.png" alt="" class="img-fluid" height="75%" style="margin-bottom: 40px;margin-left: 40px;">
+                    <img src="img/ai_eng2.png" alt="" class="img-fluid" id="eng-img" style="margin-bottom: 40px;margin-left: 35px;" data-aos="fade-up" data-aos-delay="330">
                     <!--? box -->
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-leaf color-blue" id="icon-180"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Green Building and
+                            Sustainability</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Committed to eco-friendly practices, our green building solutions prioritize sustainability. incorporating energy-efficient technologies and environmentally conscious materials for a lasting impact.
                         </p>    
                         </div> 
                     </div>  
@@ -203,53 +215,49 @@
 
                 <div class="col-md-4"> <!--Todo Col-4-->
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-object-group color-blue" style="font-size: 40px;"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Design and planning</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Our expert designers and planners collaborate seamlessly to transform your visions into detailed, practical plans,
+                            ensuring a solid foundation for your project.
                         </p>    
                         </div> 
                     </div>  
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-tape color-blue" style="font-size: 40px;"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Renovation and Remodeling</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Whether it's a revitalized office or a modernized home, our renovation experts bring fresh perspectives and craftsmanship to transform existing spaces into renewed, functional environments.
                         </p>    
                         </div> 
                     </div>  
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-comments color-blue" style="font-size: 40px;"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Consulting and
+                            Advisory Services</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Our experienced consultants provide valuable insights, helping you navigate regulatory requirements, optimize project strategies, and make informed decisions for successful outcomes. 
                         </p>    
                         </div> 
                     </div>  
@@ -258,11 +266,11 @@
                 <div class="col-md-4"><!--Todo Col-4-->
 
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                          <!--? Box-->
                         <div class="solution-box-icon">
                          <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-trowel color-blue" style="font-size: 40px;"></i>
                         </div>
                          <div class="solution-box">
                          <!--? Heading -->
@@ -275,36 +283,34 @@
                     </div>  
                     </div>  
 
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-brush color-blue" style="font-size: 40px;"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Interior Design and
+                            Finishing</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Our interior design specialists add the finishing touches, creating harmonious and aesthetically pleasing environments that align with your style, preferences, and functionality.
                         </p>    
                         </div> 
                     </div> 
                     
-                    <div class="box"> <!--?Box-->
+                    <div class="box" data-aos="fade-up" data-aos-delay="330"> <!--?Box-->
                         <!--? Box-->
                         <div class="solution-box-icon">
                         <!--? icon -->
-                        <i class="fa-solid fa-circle-arrow-down color-blue" id="icon-180"></i>
+                        <i class="fa-solid fa-headset color-blue" style="font-size: 40px;"></i>
                         </div>
                         <div class="solution-box">
                         <!--? Heading -->
-                        <h5>Construction and Proeject Management</h5>
+                        <h5>Maintenance and
+                            Support</h5>
                         <!--? p --> 
-                        <p>Celebrating a decade of construction excellence, CEC reflects 
-                            on a journey marked by trust, resilience, and achievements. Gratitude is extended to the dedicated CEC family,
-                            including employees, partners, and clients, 
+                        <p>Beyond completion, our commitment extends to post-construction support, offering maintenance services to ensure the longevity and optimal performance of your structures.
                         </p>    
                         </div> 
                     </div>  
@@ -314,8 +320,237 @@
             </div>
         </div>
 
+       
+
+        <!--? Portfolio Gallery Title -->
+        <div class="mt-1" id="portfolio1"></div> <!--? tag -->
+            <div class="container  mt-7">
+                <div class="row">
+                    <!--? Space-->
+                    <div class="col-md-2">
+                        
+                    </div>
+                    <!--? col-md-4-->
+                    <div class="col-md-4" data-aos="fade-left" data-aos-delay="330">
+                        <h1 class="color-blue mb-5" id="t">Portfolio Gallery</h1>
+                    </div>
+                    <!--? col-md-4-->
+                    <div class="col-md-4" data-aos="fade-left" data-aos-delay="330">
+                        <div class="slider-nav btn-gallery"> <!--?Gallery Buttons-->
+                            <a href="#slider-1" href="#t">1</a>
+                            <a href="#slider-2">2</a>
+                            <a href="#slider-3">3</a>
+                            <a href="#slider-4">4</a>
+                            <a href="#slider-5">5</a>
+                            <a href="#slider-6">6</a>
+                            <a href="#slider-7">7</a>
+                            <a href="#slider-8">8</a>
+                            <a href="#slider-9">9</a>
+                            <a href="#slider-10">10</a>
+                        </div>
+                    </div>
+                    <!--? Space-->
+                    <div class="col-md-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+        <!--? Gallery -->
+        
+        <div class="container" data-aos="zoom-in" data-aos-delay="300"> 
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="costbox">
+                        <div class="slider-wrapper">
+                            <div class="slider"><!--?Gallery Images-->
+                                <img id="slider-1" src="img/hero-img-all.png" alt="" class="img-fluid">
+                                <img id="slider-2" src="img/hero-img-all.png" alt="" class="img-fluid">
+                                <img id="slider-3" src="img/hero-img-all.png" alt="" class="img-fluid">
+                                <img id="slider-4" src="img/hero-img-all.png" alt="" class="img-fluid">
+                                <img id="slider-5" src="img/hero-img-all.png" alt="" class="img-fluid">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--? Clients -->
+        <div class="mt-1" id="testamonia"></div> <!--? tag -->
+        <div class="container mt-7">
+            <!--? Raw(1)-->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <!--? Heading-->
+                <div class="col-md-8">
+                    <h1 class="" data-aos="fade-left" data-aos-delay="300">Trusted Clients</h1>
+                     <!--? Arrow-icon -->
+                     <i class="fa-solid fa-circle-arrow-down color-blue mt-2" id="icon-270" data-aos="fade-left" data-aos-delay="350"></i>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <!--? Raw(2)-->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 slider-wrapper">
+                    <!--? Quotes Icon-->
+                    <i id="quote-icon" class="fa-solid fa-quote-right" data-aos="fade-up" data-aos-delay="400"></i>
+                    <!--? Quotes -->
+
+                    <div class="quotes" data-aos="fade-up" data-aos-delay="450">
+                        <p id="quote-1" > CEC Exceeded our expectations! Their experties, attention to detail, and professionalism made our project a seamless
+                        experiance. We're thrilled with the results and highly recommend their outstanding services.
+                        </p>
+                        <div class="client d-flex">
+                            <img src="img/me-eng.png" alt="">
+                            <div class="name">
+                            <h5>Rasika Wijerathne</h5>
+                            <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quotes" data-aos="fade-up" data-aos-delay="450">
+                        <p id="quote-1"> CEC's team demonstrated exceptional technical proficiency and commitment to
+                                        excellence in our construction project. Highly impressed with the results.
+                        </p> 
+                        <div class="client d-flex">
+                            <img src="img/me-eng1.png" alt="">
+                            <div class="name">
+                            <h5>Roshan Ratnnayaka</h5>
+                            <p>Real Estate Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quotes" data-aos="fade-up" data-aos-delay="450">
+                        <p id="quote-1"> CEC delivered beyond our expectations. Their professionalism and expertise ensured a smooth construction process. Highly recommended.
+                        </p> 
+                        <div class="client d-flex">
+                            <img src="img/me-eng2.png" alt="">
+                            <div class="name">
+                            <h5>Rasika Wijerathne</h5>
+                            <p>Software Engineer</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                 </div> 
+             </div>
+
+
+             <!--? Our Team -->
+             <div class="mt-1" id="team1"></div> <!--? tag -->
+             <div class="container footer mt-7">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="Title">
+                            <!--? Heading -->
+                            <h1 id="" data-aos="fade-left" data-aos-delay="300">Our<br>Team</h1>
+                            <!--? Icon -->
+                            <i class="fa-solid fa-circle-arrow-down color-blue our-solution-title" id="icon-270" data-aos="fade-left" data-aos-delay="350"></i>     
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                         <!--? Team member 01 -->
+                         <div class="team-member" data-aos="zoom-in" data-aos-delay="380">
+                            <img src="img/Thara.png" alt="">
+                            <h5 class="mt-3">Dr. Tharanga Aruggoda</h5>
+                            <p style="font-size: 16px;color: #a7cf38;" >Group Director</p>
+                            <p>Capital Engineering Consortium (CEC), led by the visionary Director, Dr. Tharanga Aruggoda. Beyond his role at CEC, Dr. Aruggoda serves as the Chairman of the Boxing Association of Sri Lanka's Medical Commission, ensuring the well-being of local boxers. His influence extends regionally as a Member of the Asian Boxing Confederation's Medical Committee, and globally as a Member of the International Boxing Association's (AIBA) Medical Committee. Dr. Aruggoda's commitment to excellence and innovation shines through in both the engineering realm and his impactful roles within the international community.
+                                 CEC stands as a hub where diverse expertise converges under his leadership for unparalleled success.
+                            </p>
+                        </div>
+                    </div>
+                       
+                    <div class="col-md-4">
+                         <!--? Team member 02 -->
+                         <div class="team-member"  data-aos="zoom-in" data-aos-delay="380">
+                            <img src="img/me-eng.png" alt="">
+                            <h5 class="mt-3">Mr.Tharanga</h5>
+                            <p>CEC Exceeded our expectations! Their experties, attention to detail, and professionalism made our project a seamless
+                                experiance. We're thrilled with the results and highly recommend their outstanding services.
+                                EC Exceeded our expectations! Their experties, attention to detail, and professionalism made our project a seamless
+                                experiance. We're thrilled with the results and highly recommend their outstanding services.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!--? Footer -->
+                 <div class="mt-1" id="contact1"></div> <!--? tag -->
+            <footer>
+                 <div class="container ms-auto footer mt-9"  data-aos="fade-up" data-aos-delay="380">
+                    <div class="row">
+                        <div class="col-md-4 Details">
+                            <div class="contact-us">
+                            <!--? Contact US-->
+                                <h1 class="color-white">Contact<br>us</h1>
+                                <i class="fa-solid fa-circle-arrow-down color-white our-solution-title" id="icon-270" ></i> 
+                            </div>
+                            <!--? Call US-->
+                            <div class="call-us">
+                                <span class="color-green">Call us</span><br>
+                                <span class="color-white">045 22 67 345</span>
+                            </div>
+                            <!--? Visit Us-->
+                            <div class="visit-us mt-3">
+                                <span class="color-green">Visit us</span><br>
+                                <span class="color-white">No 123,</span><br>
+                                <span class="color-white">Church Road,</span><br>
+                                <span class="color-white">Ehaliyagoda</span>
+                            </div>
+                            <!--? Visit Us-->
+                            <div class="email-us mt-3">
+                                <span class="color-green">Email us</span><br>
+                                <span class="color-white">capitalebgineer@offical.com</span>
+                            </div>
+                            <div class="Whatsapp mt-3">
+                                <span class="color-green">WhatsApp Us</span><br>
+                                <button class="WhatsApp mt-2"><i class="fa-brands fa-whatsapp " style="font-size: 40px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-8 form-footer mt-5 mb-5"><!--? Form Footer (Left)-->
+                            <img src="img/CEC _full_logo.svg" alt="" class="img-fluid">
+
+                            <div class="contact-forum">
+                                <form action="">
+                                    <label for="">Name</label><br>
+                                    <input type="text"><br>
+                                    <label for="">Email</label><br>
+                                    <input type="text"><br>
+                                    <label for="" >subject</label><br>
+                                    <input type="text"><br>
+                                    <label for="">Message</label><br>
+                                    <input type="text" id="message-box">
+                                </form>
+                            </div>
+
+                            <button class="mt-5 send-btn">Send</button>
+
+                            <div class="socailmedia mt-5 ">
+                                <button class="link-btn"><i class="fa-brands fa-facebook" style="font-size: 32px;"></i></button>
+                                <button class="link-btn"><i class="fa-brands fa-linkedin" style="font-size: 32px;""></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                 </div>
+
+            </footer>
+
+      
+            
 
         <!--? Script-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
     </body>
 </html>
