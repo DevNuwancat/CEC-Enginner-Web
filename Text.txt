@@ -1,0 +1,18 @@
+
+CEC Enginner Project / ToDo
+
+
+5 *. Add Project to Portfolio Gallerry 
+6 #. Genarate 3 Testamonial / images 
+7 *. Add detais of Our Testamonials
+8 #. Button Hover
+9 *. add Softcode logo 
+10 #. Responsive 
+
+
+https://www.youtube.com/watch?v=0kmFlBJIUkQ
+Animate on Scroll 
+
+Library - animation
+https://github.com/michalsnik/aos
+
