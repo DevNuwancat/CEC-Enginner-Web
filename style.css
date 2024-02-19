@@ -597,6 +597,31 @@ input{ /** form Input **/
     .solution-box{
         height: fit-content;
     }
+
+    #hero-header{                               /*? Banner header text to Center */
+        text-align: center;
+        font-size:60px;
+        visibility:visible;
+
+    }
+
+    .banner-arrow {                              /*? Arrow icon  to Center */
+        position: relative;
+        left: 50%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
+    }
+
+    .hero-title{                                /*? "Protfolio Button" to Center */
+        position: relative;
+        
+        
+        visibility: visible;
+        margin-top: 0px;
+        bottom: 20px;
+
+
 }
 
 @media (max-width: 575.98px)  { 
