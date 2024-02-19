@@ -387,7 +387,8 @@ body
 footer
 {
     background-color: #172346;
-    width: 100%;
+    
+    
 }
 
 /** Whatsup Button **/
@@ -416,7 +417,7 @@ input{ /** form Input **/
     border-radius: 45px;
     border: none;
 
-    width: 450px;
+    width: 400px;
     height: 30px;
   
 }
@@ -453,7 +454,7 @@ input{ /** form Input **/
 
 .team_asanga{
 
-    padding-bottom: 70px;
+    padding-bottom: 165px;
     font-weight: 100;
    
 }
@@ -629,12 +630,27 @@ input{ /** form Input **/
     .banner-arrow {                              /*? Arrow icon  to Center */
         position: relative;
         left: 50%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
     }
 
     .hero-title{                                /*? "Protfolio Button" to Center */
         position: relative;
         left: 22.5%;
+        visibility: visible;
+        margin-top: 0px;
+        bottom: 20px;
     }
+
+    #aboutus-image{
+        visibility: hidden;
+    }
+    .white-part{
+        padding: 20px;
+        
+    }
+
 
 
 /** About us **/
