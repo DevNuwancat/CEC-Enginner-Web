@@ -624,7 +624,9 @@ input{ /** form Input **/
 
     #hero-header{                               /*? Banner header text to Center */
         text-align: center;
-        font-size:xx-large;
+        font-size:60px;
+        visibility:visible;
+
     }
 
     .banner-arrow {                              /*? Arrow icon  to Center */
@@ -637,7 +639,8 @@ input{ /** form Input **/
 
     .hero-title{                                /*? "Protfolio Button" to Center */
         position: relative;
-        left: 22.5%;
+        
+        
         visibility: visible;
         margin-top: 0px;
         bottom: 20px;
@@ -651,7 +654,19 @@ input{ /** form Input **/
         
     }
 
+    input{ /** form Input **/
 
+        border-radius: 45px;
+        border: none;
+    
+        width: 300px;
+        height: 30px;
+      
+    }
+
+    .footer-img {
+        width: 200px;
+    }
 
 /** About us **/
 
