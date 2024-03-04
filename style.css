@@ -90,6 +90,65 @@ body
     color: rgb(255, 255, 255);  /** Font Color */     
 }
 
+
+/** Portfolio Gallery **/
+
+.quick-protfolio-btn2 /* TODO ---- Portfolio Gallery Button in Card --- */
+{
+     /** Button Border **/
+     border-radius: 25px;
+     border-style: none;
+ 
+     /** Button **/
+     background-color: #0f2b7e;
+     padding: 10px 30px;
+ 
+      /** Button Font **/
+     color: #f0f1f2;
+     font-size: 14px; 
+ 
+     /** Button Position **/
+
+     text-decoration: none;
+
+     
+}
+
+.quick-protfolio-btn2:hover
+{
+    background-color: #a7cf38;
+}
+
+
+.btn-link
+{
+    text-decoration: none;
+    color: #f0f1f2;
+}
+
+.btn-link:hover
+{
+    color: #f0f1f2;
+}
+
+
+
+
+.card
+{   
+    border: none;
+    border-radius:0px;  
+    
+}
+
+/** News **/
+
+/*? News */
+.Date
+{
+    color: #989898;
+}
+
 /** Hero Section */
 
 
@@ -645,6 +704,15 @@ input{ /** form Input **/
             
     
     }
+
+    .card
+{   
+    border: none;
+    border-radius:0px;  
+    margin: auto;  
+
+    
+}
 
 
     #hero-header{                               /*? Banner header text to Center */
